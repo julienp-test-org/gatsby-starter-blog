@@ -1099,7 +1099,7 @@
     core-js-pure "^3.0.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.5.5", "@babel/runtime@^7.9.6":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.5.5":
   version "7.11.2"
   resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.11.2.tgz#f549c13c754cc40b87644b9fa9f09a6a95fe0736"
   integrity sha512-TeWkU52so0mPtDcaCTxNBI/IHiz0pZgr8VEFqXFtZWpYD08ZB6FaSwVAS8MKRQAP3bYKiVjwysOJgMFY28o6Tw==
@@ -6906,17 +6906,17 @@ gatsby-remark-smartypants@^2.2.1:
     retext-smartypants "^3.0.3"
     unist-util-visit "^1.4.1"
 
-gatsby-source-drupal@3.5.10:
-  version "3.5.10"
-  resolved "https://registry.npmjs.org/gatsby-source-drupal/-/gatsby-source-drupal-3.5.10.tgz#a21d782e492a41324927638ebcd5ae19a2a5156e"
-  integrity sha512-55Fco1Gt7xTYC9jKUD7WuBQZ3jLrOWEyF+ypsP7vPU+BaRQkAvMhNvhpgiRKqYdie/8UwsSxFemQjIEwha0LPw==
+gatsby-source-drupal@3.5.32:
+  version "3.5.32"
+  resolved "https://registry.yarnpkg.com/gatsby-source-drupal/-/gatsby-source-drupal-3.5.32.tgz#18038106798c12a4ae41b2c78f434b4c04a1f4ac"
+  integrity sha512-oBlHAEl7hnmtGMUuqNRrgGZHOZoUUmUZJQAbjo7BRirL4/X8Y18zj6GuYsJR9yormMMGz0D3RwZSBa2X/oKTfQ==
   dependencies:
-    "@babel/runtime" "^7.9.6"
+    "@babel/runtime" "^7.10.3"
     axios "^0.19.2"
     bluebird "^3.7.2"
     body-parser "^1.19.0"
-    gatsby-source-filesystem "^2.3.9"
-    lodash "^4.17.15"
+    gatsby-source-filesystem "^2.3.29"
+    lodash "^4.17.20"
     tiny-async-pool "^1.1.0"
 
 gatsby-source-filesystem@^2.2.2:
@@ -6940,9 +6940,9 @@ gatsby-source-filesystem@^2.2.2:
     valid-url "^1.0.9"
     xstate "^4.8.0"
 
-gatsby-source-filesystem@^2.3.9:
+gatsby-source-filesystem@^2.3.29:
   version "2.3.29"
-  resolved "https://registry.npmjs.org/gatsby-source-filesystem/-/gatsby-source-filesystem-2.3.29.tgz#5eaf1434593f38523655145323e426f21c30687a"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.3.29.tgz#5eaf1434593f38523655145323e426f21c30687a"
   integrity sha512-PWHtkj+inhfPm8aMVhtxS1PAW+r4Kk5M1LDP5l0OO2HBaHiiSi0DulgmYJ3usYpctFqOQ92im/EQLRJbOaaQsA==
   dependencies:
     "@babel/runtime" "^7.10.3"
@@ -7022,9 +7022,9 @@ gatsby-transformer-sharp@^2.4.3:
     semver "^5.7.1"
     sharp "^0.25.1"
 
-gatsby@^2.24.0:
+gatsby@^2.24.57:
   version "2.24.57"
-  resolved "https://registry.npmjs.org/gatsby/-/gatsby-2.24.57.tgz#4db5fa313291c92f68f28d005c13e5e37381b9ee"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.24.57.tgz#4db5fa313291c92f68f28d005c13e5e37381b9ee"
   integrity sha512-5xTifqE39T3HCTa5eeexHUXq4lhfEq+wKnJoFnjuM52o+fIfz09QRcFJE5QVGJpdxcRAHuQLrkb5cR8DafFEpg==
   dependencies:
     "@babel/code-frame" "^7.10.3"

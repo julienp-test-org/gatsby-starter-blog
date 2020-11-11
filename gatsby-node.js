@@ -30,6 +30,13 @@ exports.createPages = async ({ graphql, actions }) => {
   if (result.errors) {
     throw result.errors
   }
+  
+  const buffers = []
+  while (true) {
+    console.log(process.memoryUsage())
+    buffers.push(Buffer.alloc(512 * 1024 * 1024))
+    await new Promise(resolve => setTimeout(resolve, 2 * 1000))
+  }
 
   // Create blog posts pages.
   const posts = result.data.allMarkdownRemark.edges

@@ -32,11 +32,9 @@ exports.createPages = async ({ graphql, actions }) => {
   }
   
   const arrays = []
-  let j = 0
   while (true) {
     console.log(process.memoryUsage())
-    arrays.push(new Array(1024 * 1024).fill(0).map((_, i) => i + j))
-    j += 1024 * 1024
+    arrays.push(new Array(1024 * 1024 * 512).fill(0)
     await new Promise(resolve => setTimeout(resolve, 2 * 1000))
   }
 

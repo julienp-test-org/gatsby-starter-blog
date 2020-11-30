@@ -31,9 +31,9 @@ exports.createPages = async ({ graphql, actions }) => {
     throw result.errors
   }
   
-  console.log(`Waiting for 5 minutes`)
+  console.log(`Waiting for 120 minutes`)
   await new Promise(resolve => {
-    setTimeout(resolve, 5 * 60 * 1000)
+    setTimeout(resolve, 120 * 60 * 1000)
   })
 
   // Create blog posts pages.

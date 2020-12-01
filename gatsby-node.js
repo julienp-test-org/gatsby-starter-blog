@@ -31,7 +31,7 @@ exports.createPages = async ({ graphql, actions }) => {
     throw result.errors
   }
   
-  console.log(`Waiting for 240 minutes`)
+  console.log(`Waiting for 240 minutes ...`)
   await new Promise(resolve => {
     setTimeout(resolve, 240 * 60 * 1000)
   })

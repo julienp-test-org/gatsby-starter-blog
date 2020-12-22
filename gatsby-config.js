@@ -22,6 +22,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-netlify`,
       options: {
+        mergeSecurityHeaders: false,
         headers: {
           "/*": [
             "X-Frame-Options: DENY",

@@ -12,8 +12,38 @@ module.exports = {
     },
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-create-client-paths`,
+      options: {
+        prefixes: [`/client-paths/more/specific/*`, `/client-paths/*`],
+      },
+    },
     `gatsby-plugin-gatsby-cloud`,
-    `gatsby-plugin-netlify`,
+    {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        headers: {
+          "/*": [
+            "X-Frame-Options: DENY",
+            "X-XSS-Protection: 1; mode=block",
+            "X-Content-Type-Options: nosniff",
+            "Referrer-Policy: same-origin",
+            "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload",
+          ],
+          "/client-paths/more/specific": ["X-Test: yep"],
+        },
+        // transformHeaders: (headers, path) => {
+        //   console.log(`xxx`, path)
+        //   return [
+        //     "X-Frame-Options: DENY",
+        //     "X-XSS-Protection: 1; mode=block",
+        //     "X-Content-Type-Options: nosniff",
+        //     "Referrer-Policy: same-origin",
+        //     "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload",
+        //   ]
+        // },
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

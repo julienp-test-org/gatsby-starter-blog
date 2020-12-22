@@ -24,6 +24,7 @@ module.exports = {
       options: {
         mergeSecurityHeaders: false,
         headers: {
+          "/client-paths/more/specific": ["X-Test: yep"],
           "/*": [
             "X-Frame-Options: DENY",
             "X-XSS-Protection: 1; mode=block",
@@ -31,7 +32,6 @@ module.exports = {
             "Referrer-Policy: same-origin",
             "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload",
           ],
-          "/client-paths/more/specific": ["X-Test: yep"],
         },
         // transformHeaders: (headers, path) => {
         //   console.log(`xxx`, path)

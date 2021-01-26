@@ -1,3 +1,5 @@
+const path = require("path")
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Starter Blog`,
@@ -12,6 +14,12 @@ module.exports = {
     },
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-functions`,
+      options: {
+        path: path.join(__dirname, `src/api`),
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

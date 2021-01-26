@@ -6,10 +6,14 @@ export default async (req, res) => {
     body = await response.text()
   }
 
+  const dogImage = await fetch("https://dog.ceo/api/breeds/image/random")
+  const dogJson = await dogImage.json()
+
   const name = req.query.name
   res.status(200).send({
     value: `Hello, ${name}!`,
     status: response.status,
+    dog: dogJson,
     body,
     request: {
       path: req.path,

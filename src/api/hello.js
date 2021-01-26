@@ -1,7 +1,7 @@
 export default async (req, res) => {
   const response = await fetch(`https://google.com`)
   console.log({ status: response.status })
-  let body
+  let body = ""
   if (response) {
     body = await response.text()
   }
@@ -14,7 +14,7 @@ export default async (req, res) => {
     value: `Hello, ${name}!`,
     status: response.status,
     dog: dogJson,
-    body,
+    body: body.slice(0, 100),
     request: {
       path: req.path,
       query: req.query,

@@ -2,7 +2,7 @@
 title: Test 1
 ---
 
-Ahoy
+Ahoy - 1
 
 ![image1](./image1.png).
 ![image2](./image2.png).

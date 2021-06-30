@@ -13,6 +13,7 @@ I'm sure I'll write a lot more interesting things in the future.
 Oh, and here's a great quote from this Wikipedia on
 [salted duck eggs](https://en.wikipedia.org/wiki/Salted_duck_egg).
 
+![image here](./ui8.jpeg).
 ![image here](./ui7.jpeg).
 ![image here](./ui6.jpeg).
 ![image here](./iu4.jpeg).
